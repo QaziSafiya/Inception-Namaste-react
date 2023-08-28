@@ -70,12 +70,11 @@ root.render(div);
 
 
 /* Agr ek div ke do child hai h1 and h2 then we have to pass them into an array*/
-import React from "react";
-import reactDOM from "react-dom/client"
+
 const div = React.createElement("div",{id:"parent"} ,[React.createElement("div" ,{id:"heading"},[ React.createElement("h1", {id:"head"}, "hello React  INDIA lovers") ,React.createElement("h1", {id:"head"}, "hello React  INDIA2 lovers") ]),
 
 React.createElement("div" ,{id:"heading"},[ React.createElement("h1", {id:"head"}, "hello React  INDIA lovers") ,React.createElement("h1", {id:"head"}, "hello Namste javascript 🚀") ])
 ]);
 console.log(div);
-const root = reactDOM.createRoot(document.getElementById("root"));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(div);
